@@ -31,12 +31,12 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-            - name: Setup Pages
-              uses: actions/configure-pages@v5
             - name: install pakages
               run: npm ci
             - name: Build The sass
               run: npm run build
+            - name: Setup Pages
+              uses: actions/configure-pages@v5
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
