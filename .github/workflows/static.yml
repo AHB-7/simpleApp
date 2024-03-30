@@ -36,7 +36,7 @@ jobs:
             - name: install pakages
               run: npm ci
             - name: build sass
-              run: npm run build
+              run: npm run watch
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
