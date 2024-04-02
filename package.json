@@ -16,7 +16,9 @@
         "build": "sass src/scss:dist/css",
         "watch": "sass --watch src/scss:dist/css",
         "lint": "eslint **/*.js",
-        "format": "prettier --write **/*.js",
+        "format": "prettier --write **/*.js"
+    },
+    "babel": {
         "presets": [
             [
                 "@babel/preset-env",
